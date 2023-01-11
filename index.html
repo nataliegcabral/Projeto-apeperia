@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Apeperia - aplicativos sob medida</title>
@@ -21,15 +21,18 @@
   <link rel="stylesheet" href="css/rodape.css">    
   <link rel="stylesheet" href="css/dialogNewsletter.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width"/>
 </head>
 <body>
 
+  <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
+
   <header class="cabecalho container">
-    <a href="#" class="cabecalho-logo">
+    <a href="#" class="cabecalho-logo" title="Home da Apeperia">
 
         <svg width="205" height="59" viewBox="0 0 205 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <desc>Created using Figma</desc>
+          <title>Logotipo da Apeperia</title>
+          <!-- <desc>Created using Figma</desc> -->
           <g id="Canvas" transform="translate(-2230 1001)">
             <g id="Logo do Apeperia">
               <g id="Oval 1">
@@ -64,10 +67,10 @@
     </nav>
   </header>
 
-  <main class="conteudo">
+  <main class="conteudo" role="main">
 
     <section class="secaoDestaque">
-      <h1 class="secaoDestaque-titulo">
+      <h1 class="secaoDestaque-titulo" id="conteudoPrincipal">
         APLICATIVOS NA MEDIDA
       </h1>
       <h2 class="secaoDestaque-texto">
@@ -112,7 +115,7 @@
 
     <section class="secaoSobre clearfix">
       <div class="container">
-        <img src="img/sobre-apeperia.png" class="secaoSobre-imgDestaque">
+        <img src="img/sobre-apeperia.png" class="secaoSobre-imgDestaque" alt>
         <h2 class="secaoSobre-titulo tituloPadrao">
           SOBRE
         </h2>
@@ -129,10 +132,10 @@
         </p>
 
         <ul class="secaoSobre-plataformas">
-          <li><img src="img/android.png" alt="Ícone do Android"></li>
-          <li><img src="img/blackberry.png" alt="Ícone da Blackberry"></li>
-          <li><img src="img/apple.png" alt="Ícone do iOS"></li>
-          <li><img src="img/windowsphone.png" alt="Ícone do Windows Phone"></li>
+          <li><img src="img/android.png" alt="Android"></li>
+          <li><img src="img/blackberry.png" alt="Blackberry"></li>
+          <li><img src="img/apple.png" alt="iOS"></li>
+          <li><img src="img/windowsphone.png" alt="Windows Phone"></li>
         </ul>
         <p>
           Desenvolvemos aplicativos para todas as plataformas
@@ -205,7 +208,7 @@
 
         <li id="new0" class="listaDeArtigos-item">
           <article class="listaDeArtigos-artigo">
-            <img src="img/10-aplicativos-mais-baixados.png" class="listaDeArtigos-artigo-img">
+          <img src="img/10-aplicativos-mais-baixados.png" class="listaDeArtigos-artigo-img" alt="Um teclado da Apple e um celular da Samsung">
             <h3 class="listaDeArtigos-artigo-titulo">
               Conheça os 10 aplicativos mais badalados do momento
             </h3>
@@ -220,7 +223,7 @@
 
         <li id="new1" class="listaDeArtigos-item">
           <article class="listaDeArtigos-artigo">
-            <img src="img/ux-usabilidade.jpg" class="listaDeArtigos-artigo-img">
+            <img src="img/ux-usabilidade.jpg" class="listaDeArtigos-artigo-img" alt="Pessoa usando um celular">
             <h3 class="listaDeArtigos-artigo-titulo">
               Usabilidade: Entenda os benefícios de treinar sua equipe em UX
             </h3>
@@ -235,7 +238,7 @@
 
         <li id="new2" class="listaDeArtigos-item">
           <article class="listaDeArtigos-artigo">
-            <img src="img/dicas-acessibilidade.jpg" class="listaDeArtigos-artigo-img">
+            <img src="img/dicas-acessibilidade.jpg" class="listaDeArtigos-artigo-img" alt="Homem sendo levantado pela plateia em um show">
             <h3 class="listaDeArtigos-artigo-titulo">
               5 dicas para melhorar a acessibilidade em sua interface
             </h3>
@@ -274,24 +277,24 @@
 
     <section class="secaoDestaques">
       <div class="container">
-        <h1 class="secaoDestaques-titulo tituloPadrao">DESTAQUES</h1>
+        <h2 class="secaoDestaques-titulo tituloPadrao">DESTAQUES</h2>
 
-        <a href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste" class="secaoDestaques-link">
-          <div class="secaoDestaques-destaque">
-            <img src="img/comecando-criar-logotipo.png" class="secaoDestaques-destaque-img">
-            <p class="secaoDestaques-destaque-titulo"  id="tituloDestaque1">
+        <a href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste" class="secaoDestaques-link" aria-labelledby="tituloDestaque1">
+          <figure class="secaoDestaques-destaque">
+            <img src="img/comecando-criar-logotipo.png" class="secaoDestaques-destaque-img" alt="Ferramentas de designer. Ilustração">
+            <figcaption class="secaoDestaques-destaque-titulo"  id="tituloDestaque1">
               Conheça as primeiras etapas na criação de um logotipo
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         </a>
 
-        <a href="http://blog.apeperia.com.br/design/dicas-como-fotografar-com-celular" class="secaoDestaques-link">
-          <div class="secaoDestaques-destaque">
-            <img src="img/dicas-fotografia.png" class="secaoDestaques-destaque-img">
-            <p class="secaoDestaques-destaque-titulo"  id="tituloDestaque2">
+        <a href="http://blog.apeperia.com.br/design/dicas-como-fotografar-com-celular" class="secaoDestaques-link" aria-labelledby="tituloDestaque2">
+          <figure class="secaoDestaques-destaque">
+            <img src="img/dicas-fotografia.png" class="secaoDestaques-destaque-img" alt="Uma mulher mostrando imagens de uma câmera para um homem">
+            <figcaption class="secaoDestaques-destaque-titulo"  id="tituloDestaque2">
               Veja dicas de como fotografar usando seu celular
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         </a>
 
         <button class="secaoDestaques-form-botao btnPadrao btnPadrao--pequeno" id="abreDialog">
@@ -338,57 +341,57 @@
           </p>
 
           <div class="contatoCampo contatoCampo--sucesso">
-            <label>Nome: </label>
-            <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
+            <label for="nome">Nome: </label>
+            <input id="nome" type="text" class="contatoCampo--validouFoi" value="Natan Souza" required placeholder="Nome...">
           </div>  
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Email: </label>
-            <input type="email" class="contatoCampo--validouErro" required>
+            <label for="email">Email: </label>
+            <input id="email" type="email" class="contatoCampo--validouErro" required placeholder="Email...">
             <span class="contatoCampo-msg contatoCampo-msg--erro">
               Você quis dizer <a href="#">gmail.com?</a>
             </span>
           </div>
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Telefone: </label>
-            <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
+            <label for="tel">Telefone: </label>
+            <input id="tel" type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
             <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
           </div>     
 
           <div class="contatoCampo">
-            <label>CEP: </label>
-            <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+            <label for="cep">CEP: </label>
+            <input id="cep" type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
           </div>
 
           <div class="contatoCampo">
-            <label>Endereço: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+            <label for="endereco">Endereço: </label>
+            <input id="endereco" type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
           </div>   
 
           <div class="contatoCampo">
-            <label>Bairro: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+            <label for="bairro">Bairro: </label>
+            <input id="bairro" type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
           </div>   
 
           <div class="contatoCampo">
-            <label>Cidade: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+            <label for="cidade">Cidade: </label>
+            <input id="cidade" type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
           </div>   
 
           <div class="contatoCampo">
-            <label>Estado: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+            <label for="estado">Estado: </label>
+            <input id="estado" type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
           </div>   
 
           <div class="contatoCampo">
-            <label>Mensagem: </label>
-            <textarea name="" cols="30" rows="10" required></textarea>
+            <label for="msg">Mensagem: </label>
+            <textarea id="msg" name="" cols="30" rows="10" required></textarea>
           </div>
 
-          <div class="contatoCampo">
-            <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox">
-            <label class="contatoCampo-label">Receber destaques por email</label>
+          <div class="contatoCampo" id="botaoCheck">
+            <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
+            <label class="contatoCampo-label" for="receberEmail" id="label">Receber destaques por email</label>
           </div>
 
           <div class="contatoCampo">
@@ -424,7 +427,8 @@
           </p>
         </div>
 
-        <video src="img/formacao-java.mp4" class="secaoInstitucional-video">
+        <video src="img/formacao-java.mp4" class="secaoInstitucional-video" controls>
+        <track src="img/legenda-portugues-brasil.vtt" kind="subtitles" srclang="pt-br" label="Português (Brasil)"></track>
         </video>
 
       </div>
@@ -434,7 +438,7 @@
   <footer class="rodape">
     <div class="container">
 
-      <img src="img/logo-apeperia.svg" class="rodape-logo">
+      <img src="img/logo-apeperia.svg" class="rodape-logo" alt="Logotipo da Apeperia">
 
       <ul class="rodape-social">
         <li>
