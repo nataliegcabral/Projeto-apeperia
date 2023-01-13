@@ -5,27 +5,6 @@
   position: relative;
 }
 
- /* .contatoCampo-label:before {
-  content:'';
-  vertical-align: middle;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  background-color: #fff;
-  transform: translate(-7px, -3px);
-  border: 1px solid #7D7D7D;
-  color: transparent;
-  line-height: 1;
-  transition: .2s ease-in;
-}
-
- .contatoCampo-checkbox:checked + .contatoCampo-label:before {
-  content: 'x';
-  color: #fff;
-  background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
-}   */
-
 #botaoCheck {
   display: flex;
   justify-content: left;
@@ -33,7 +12,7 @@
   padding: 10px 10px 0px 10px;
 }
 
-#receberEmail {
+#botaoCheck > .contatoCampo-checkbox {
   content:'';
   display: inline;
   width: 20px;
@@ -45,15 +24,13 @@
   transition: .2s all;
 }
 
-#receberEmail:checked {
-  color: #fff;
-  background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
+#botaoCheck > .contatoCampo-checkbox:checked {
+  background-color: violet;
 }
 
 #label {
   margin: 0;
   padding-top: 10px;
-
 }
 
 .contatoCampo-icone {
