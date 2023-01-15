@@ -34,7 +34,7 @@
   content: '';
   color: #fff;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
-  border-color: #165fbe;  
+  border-color: #000;  
   line-height: 1;
 }
 
@@ -42,8 +42,8 @@
   content: '';
   width: 10px;
   height: 5px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
   transform: rotate(-45deg);
   display: block;
   position: absolute;
@@ -106,7 +106,7 @@
   font-size: .9em;
   font-weight: bold;
   color: #FD1242;
-  display: inline-block;
+  display: none;
 }
 
 .contatoCampo .contatoCampo--validouFoi {

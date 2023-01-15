@@ -326,12 +326,10 @@
               <label for="nome">Nome: </label>
               <input id="nome" type="text" class="contatoCampo--validouFoi" value="Natan Souza" required placeholder="Nome...">
             </div>
-            <div class="contatoCampo contatoCampo--erro">
+            <div class="contatoCampo">
               <label for="email">Email: </label>
-              <input id="email" type="email" class="contatoCampo--validouErro" required placeholder="Email...">
-              <span class="contatoCampo-msg contatoCampo-msg--erro">
-                Você quis dizer <a href="#">gmail.com?</a>
-              </span>
+              <input id="email" type="email" required placeholder="Email...">
+              <span id="sugestao" class="contatoCampo-msg contatoCampo-msg--erro"></span>
             </div>
             <div class="contatoCampo contatoCampo--erro">
               <label for="tel">Telefone: </label>
@@ -471,5 +469,8 @@
   <script src="js/carousel.js"></script>
   <script src="js/inert.js"></script>
   <script src="js/dialog.js"></script>
+  <script src="js/validacaoCEP.js"></script>
+  <script src="js/mailcheck.js"></script>
+  <script src="js/mailcheck-config.js"></script>
 </body>
 </html>
